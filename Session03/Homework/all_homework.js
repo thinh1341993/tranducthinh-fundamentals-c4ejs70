@@ -64,7 +64,7 @@
 // alert(new_array)
 
 // 11.new array containing only the odd Numbers
-let number = prompt('Enter a sequeence number')
-let array = number.split(',')
-let new_array = array.filter(x=> x % 2 !== 0)
-alert(new_array)
+// let number = prompt('Enter a sequeence number')
+// let array = number.split(',')
+// let new_array = array.filter(x=> x % 2 !== 0)
+// alert(new_array)
