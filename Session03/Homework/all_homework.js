@@ -1,6 +1,5 @@
 // 5.calculate the sum of the numbers
 // var a = prompt('Enter a squence of Number, separated by commas (,)');
-// var x = [];
 // x = a.split(',')
 // x = x.map(Number)
 // alert('The sum of them is ' + x.reduce((ac,cu)=>ac+cu))
