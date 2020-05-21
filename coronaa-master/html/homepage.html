@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang tin về dịch bệnh viêm đường hô hấp cấp Covid-19</title>
+    <link rel="shortcut icon" type="image/png" href="../library/favicon.ico" />
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class='header'>
+        <h1 class="header1">
+            <img src='../library/pngtree-hospital-medical-doctors-cartoon-png-image_491853.jpg' />
+            <p>Trang tin về dịch bệnh viêm đường hô hấp cấp Covid-19</p>
+        </h1>
+    </div>
+    <div class="topnav">
+        <div class="menu" style="display: inline-block;">
+            <a href="homepage.html">Trang Chủ</a>
+            <a href="khuyencao.html">Khuyến Cáo</a>
+            <a href="tintuc.html">Tin Tức</a>
+        </div>
+        <div style="display: inline-block;margin-left: 50%;"><input id="search1" type="text" placeholder="Search..">
+            <button id="submit1" type="submit"><i class="fa fa-search"></i></button></div>
+    </div>
+    </div>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <div><span style='color: red;width: 20%;margin: 15px'>Cập Nhật Mới Nhất:</span>
+        <marquee id="marquee" style="display: inline-block;width: 80%;" onmouseover="this.stop()" onmouseout="this.start()">
+        </marquee>
+    </div>
+
+    <div id="body">
+        <figure style="background-color: whitesmoke;" class="highcharts-figure">
+            <div id="countrydata" class="countrydata" style='height: 100%;vertical-align: top;padding: 5px;display: inline-block;width: 20%;margin: 30px;;position: relative;top: 35px;'>
+            </div>
+            <div id="container" style='display: inline-block;width: 60%;margin: 10px'></div>
+        </figure>
+        <div style="margin: 10px;">
+            <div style="padding-left: 5%;padding-right: 10%; margin: 10px;">
+                <div>
+                    <table class="tableVNTG" id="tableVNTG"></table>
+                </div>
+                <div class="my-custom-scrollbar" style="margin-top: 30px;">
+                    <table class="tablecity" id="table">
+                        <thead>
+                            <th>Tỉnh, Thành Phố</th>
+                            <th>Số ca nhiễm</th>
+                            <th>Khỏi</th>
+                            <th>Tử vong</th>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top: 20px;">
+            <div id="news" style="margin-left: 50px; width: 500px;display: inline-block;height: 500px;">
+            </div>
+            <div id="newsli" style=" width: 700px;display: inline-block;height: 150px;vertical-align: top;">
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/api.js"></script>
+    <script src="../js/table.js"></script>
+    <script src="../js/high-chart.js"></script>
+    <script src="../js/function.js"></script>
+</body>
+
+</html>
